@@ -14,7 +14,7 @@ def main():
     Student("Star","Lord", 37),
 ]
   printHeader()
-  selection = getUserSelection()
+  selection = int(getUserSelection())
   if selection == 0:
     printStudentsByAge(students)
   elif selection == 1:
@@ -66,19 +66,19 @@ def printStudentsByAge(students):
   print ("----Students By Age-----")
   sortStudents = sorted(students, key=lambda student: student.age)
   for student in sortStudents:
-    print student.lastName + ", " + student.firstName + ", " + str(student.age)
+    print (student.lastName + ", " + student.firstName + ", " + str(student.age))
 
 def printStudentsByLName(students):
   print ("----Students By -----")
   sortStudents = sorted(students, key=lambda student: student.lastName)
   for student in sortStudents:
-    print student.lastName + ", " + student.firstName + ", " + str(student.age)
+    print (student.lastName + ", " + student.firstName + ", " + str(student.age))
 
 def printStudentsByFName(students):
   print ("----Students By -----")
   sortStudents = sorted(students, key=lambda student: student.firstName)
   for student in sortStudents:
-    print student.lastName + ", " + student.firstName + ", " + str(student.age)
+    print (student.lastName + ", " + student.firstName + ", " + str(student.age))
 
 def printSumAge(students):
   print ("Answer:")
