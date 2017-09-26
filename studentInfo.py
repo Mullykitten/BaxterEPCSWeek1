@@ -20,7 +20,7 @@ def main():
   elif selection == 2:
     printStudentsByFName(students)
   else:
-    print "SELECTION NOT RECOGNIZED"
+    print ("SELECTION NOT RECOGNIZED")
 
 
 class Student:
