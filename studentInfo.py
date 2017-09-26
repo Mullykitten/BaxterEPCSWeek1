@@ -1,3 +1,5 @@
+import random
+
 def main():
   students = [
     Student("Halsted","Larsson", 37),
@@ -32,7 +34,6 @@ class Student:
   def assignRandomName(self):
     pass
 
-Import random:
   def assignRandomAge(self):
     self.age = random.randint(0,100)
 
