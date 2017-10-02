@@ -1,7 +1,7 @@
 import random
 
 def main():
-  students = [
+    students = [
     Student("Halsted","Larsson", 37),
     Student("John","BonJovi", 55),
     Student("Kathryn","Coombs", 16),
@@ -12,9 +12,160 @@ def main():
     Student("Clark","Kent", 42),
     Student("Elijah","Booker", 18),
     Student("Star","Lord", 37),
+
+    randomfirstName =[
+"Olivia",
+"Cora",
+"Isla",
+"Charlotte",
+"Khaleesi",
+"Amelia",
+"Isabella",
+"Aurora",
+"Amara",
+"Audrey",
+"Penelope",
+"Luna",
+"Genevieve",
+"Imogen",
+"Rose",
+"Ava",
+"Hazel",
+"Violet",
+"Thea",
+"Ophelia",
+"Eleanor",
+"Arabella",
+"Esme",
+"Adeline",
+"Alice",
+"Emilia",
+"Ada",
+"Maeve",
+"Evelyn",
+"Aurelia",
+"Elizabeth",
+"Jane",
+"Eloise",
+"Stella",
+"Lucy",
+"Julia",
+"Emma",
+"Claire",
+"Lila",
+"Iris",
+"Ivy",
+"Nora",
+"Elise",
+"Naomi",
+"Astrid",
+"Lydia",
+"Anna",
+"Atticus",
+"Harvey",
+"Bodhi",
+"Asher",
+"Jack",
+"Milo",
+"Jasper",
+"Theodore",
+"Oliver",
+"Henry",
+"Silas",
+"Oscar",
+"Leo",
+"Declan",
+"Kai",
+"Xavier",
+"Axel",
+"Felix",
+"Wyatt",
+"Thomas",
+"Levi",
+"Finn",
+"Sebastian",
+"Julian",
+"Ethan",
+"Soren",
+"Benjamin",
+"Arthur",
+"James",
+"Caleb",
+"Matthew",
+"Liam",
+"Aryan",
+"William",
+"Miles",
+"Elijah",
+"Callum",
+"Ryker",
+"Ezra",
+"Zachary",
+"Tobias",
+"Alexander",
+"John",
+"Eli",
+"Jude",
+"Cassius",
+"Harry",
 ]
+
+    randomlastName = [
+"Smith",
+"Johnson",
+"Williams",
+"Jones",
+"Brown",
+"Davis",
+"Miller",
+"Wilson",
+"Moore",
+"Taylor",
+"Anderson",
+"Thomas",
+"Jackson",
+"White",
+"Harris",
+"Martin",
+"Thompson",
+"Garcia",
+"Martinez",
+"Robinson",
+"Clark",
+"Rodriguez",
+"Lewis",
+"Lee",
+"Walker",
+"Hall",
+"Allen",
+"Young",
+"Hernandez",
+"King',
+"Wright",
+"Lopez",
+"Hill",
+"Scott",
+"Green",
+"Adams",
+"Baker",
+"Gonzalez",
+"Nelson",
+"Carter",
+"Mitchell",
+"Perez",
+"Roberts",
+"Turner",
+"Phillips",
+"Campbell",
+"Parker",
+"Evans",
+"Edwards",
+"Collins",
+]
+
+
   printHeader()
-  selection = getUserSelection()
+  selection = int(getUserSelection())
   if selection == 0:
     printStudentsByAge(students)
   elif selection == 1:
@@ -27,9 +178,9 @@ def main():
 
 class Student:
   def __init__(self,firstName, lastName, age):
-    self.lastName = lastName
-    self.age = age
-    self.firstName = firstName
+    self.lastName = random.choice
+    self.age = random.choice
+    self.firstName = random.choice
 
   def assignRandomName(self):
     pass
@@ -66,19 +217,19 @@ def printStudentsByAge(students):
   print ("----Students By Age-----")
   sortStudents = sorted(students, key=lambda student: student.age)
   for student in sortStudents:
-    print student.lastName + ", " + student.firstName + ", " + str(student.age)
+    print (student.lastName + ", " + student.firstName + ", " + str(student.age))
 
 def printStudentsByLName(students):
   print ("----Students By -----")
   sortStudents = sorted(students, key=lambda student: student.lastName)
   for student in sortStudents:
-    print student.lastName + ", " + student.firstName + ", " + str(student.age)
+    print (student.lastName + ", " + student.firstName + ", " + str(student.age))
 
 def printStudentsByFName(students):
   print ("----Students By -----")
   sortStudents = sorted(students, key=lambda student: student.firstName)
   for student in sortStudents:
-    print student.lastName + ", " + student.firstName + ", " + str(student.age)
+    print (student.lastName + ", " + student.firstName + ", " + str(student.age))
 
 def printSumAge(students):
   print ("Answer:")
