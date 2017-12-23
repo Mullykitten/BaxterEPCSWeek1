@@ -1,19 +1,11 @@
 import random
 
 def main():
-    students = [
-    Student("Halsted","Larsson", 37),
-    Student("John","BonJovi", 55),
-    Student("Kathryn","Coombs", 16),
-    Student("Tucker","Brooks", 16),
-    Student("Al","Paccino", 78),
-    Student("Heather", "Duke", 17),
-    Student("Ben","Kiesel", 37),
-    Student("Clark","Kent", 42),
-    Student("Elijah","Booker", 18),
-    Student("Star","Lord", 37),
+self.firstName = random.choice(firstName)
+self.lasName = random.choice(lastName)
+self.Age = random.radiant(14, 18) 
 
-    randomfirstName =[
+firstName =[
 "Olivia",
 "Cora",
 "Isla",
@@ -110,7 +102,7 @@ def main():
 "Harry",
 ]
 
-    randomlastName = [
+lastName = [
 "Smith",
 "Johnson",
 "Williams",
@@ -169,9 +161,9 @@ def main():
   if selection == 0:
     printStudentsByAge(students)
   elif selection == 1:
-    printStudentsByLName(students)
+    printStudentsByLastname(students)
   elif selection == 2:
-    printStudentsByFName(students)
+    printStudentsByFirstname(students)
   else:
     print ("SELECTION NOT RECOGNIZED")
 
